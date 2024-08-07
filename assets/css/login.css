@@ -1,0 +1,47 @@
+.login {
+    background-color: var(--cinza-5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.login__titulo {
+    color: var(--cinza-100);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.campo--login {
+    width: 275px;
+    height: 20px;
+}
+
+.btn--form-login {
+    margin-top: .5rem;
+    padding: .75rem 2.125rem;
+}
+
+@media screen and (min-width: 768px) {
+    .login {
+        padding: 3.25rem 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .login {
+        padding: 6rem 0;
+    }
+    
+    .campo--login {
+        height: 36px;
+        width: 407px;
+    }
+
+    .btn--form-login {
+        font-size: 1.125rem;
+        height: 63px;
+        width: 423px;
+        margin-top: .75rem;
+    }
+}

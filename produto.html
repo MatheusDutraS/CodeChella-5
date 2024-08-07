@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
+        <link rel="stylesheet" href="./assets/css/header/header.css">
+        <link rel="stylesheet" href="./assets/css/header/header-pesquisa.css">
+        <link rel="stylesheet" href="./assets/css/produto.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produto-cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produto-card.css">
+        <link rel="stylesheet" href="./assets/css/novoProduto.css">
+        <link rel="stylesheet" href="./assets/css/detalhes/detalhes.css">
+        <link rel="stylesheet" href="./assets/css/detalhes/detalhes-sobre.css">
+        <link rel="stylesheet" href="./assets/css/detalhes/detalhes-contato.css">
+        <link rel="stylesheet" href="./assets/css/rodape.css">
+
+        <title>AluraGeek - Produto</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <picture>
+                <source srcset="./assets/img/Logo-grande.png" media="(min-width: 1440px)">
+                <img src="./assets/img/Logo.png" alt="Logo da Alura Geek" class="cabecalho__logo">
+            </picture>
+            <div class="cabecalho__pesquisa"></div>
+            <div class="pesquisa">
+                <input class="pesquisa__campo" type="text" placeholder="O que deseja encontrar?">
+                <span class="pesquisa__icone"></span>
+            </div>
+        </header>
+
+        <main>
+            <section class="produto">
+                <img src="" alt="" class="produto__imagem">
+                <div class="produto__info">
+                    <p class="info__nome"></p>
+                    <p class="info__preco"></p>
+                    <p class="info__descricao"></p>
+                </div>
+        </section>
+
+            <section class="produtos produtos--todosProdutos">
+                <div class="produto-cabecalho--todosPodutos">
+                    <h2 class="produto-cabecalho__titulo">Produtos relacionados</h2>
+                </div>
+                <ul class="lista-produtos" id="consoles">
+                    <!-- <li class="produto__card">
+                        <img src="./assets/img/produtos/StarWars-Caneca.png" alt="" class="card__img">
+                        <p class="card__nome">Produto XYZ</p>
+                        <p class="card__preco">R$ 60,00</p>
+                        <p class="card__descricao--todosProdutos">R$ 60,00</p>
+                        <div class="container-edicao" data-categoria=""">
+                            <img src="./assets/img/delete.png" alt="lixeira para deletar" id="deletar">
+                            <img src="./assets/img/edit.png" alt="caneta para editar" id="editar">
+                        </div>
+                    </li> -->
+                </ul>
+            </section>
+
+            <section class="detalhes">
+                <section class="sobre">
+                    <img src="./assets/img/Logo-grande.png" alt="Logo da Alura Geek" class="sobre__logo">
+                    <ul class="lista-links">
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Quem somos nós</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Política de privacidade</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Programa fidelidade</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Nossas lojas</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Quero ser franqueado</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Anuncie aqui</a>
+                        </li>
+                    </ul>
+                </section>
+    
+                <form class="contato">
+                    <legend class="contato__titulo">Fale conosco</legend>
+                    <fieldset class="fieldset">
+                        <label for="nome" class="rotulo">Nome:</label>
+                        <input type="text" id="nome" class="campo" placeholder="Digite seu nome completo...">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="mensagem" class="rotulo">Mensagem:</label>
+                        <textarea id="mensagem" cols="30" rows="3" class="campo" placeholder="Escreva sua mensagem"></textarea>
+                    </fieldset>
+                    <button class="btn btn--contato">Enviar mensagem</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p class="rodape__texto">Desenvolvido por Matheus Dutra<br>2023</p>
+        </footer>
+
+        <script src="./assets/js/mostrarProduto-produto.js"></script>
+        <script src="./assets/js/produtosRelacionados-produto.js"></script>
+    </body>
+</html>

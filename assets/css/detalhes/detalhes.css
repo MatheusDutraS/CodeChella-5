@@ -1,0 +1,22 @@
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--azul-claro);
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .detalhes {
+        flex-direction: row;
+        gap: 5rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .detalhes {
+        gap: 7rem;
+        padding: 4rem 9.5rem;
+    }
+}

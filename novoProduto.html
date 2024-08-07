@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
+        <link rel="stylesheet" href="./assets/css/header/header.css">
+        <link rel="stylesheet" href="./assets/css/header/header-pesquisa.css">
+        <link rel="stylesheet" href="./assets/css/novoProduto.css">
+        <link rel="stylesheet" href="./assets/css/detalhes/detalhes.css">
+        <link rel="stylesheet" href="./assets/css/detalhes/detalhes-sobre.css">
+        <link rel="stylesheet" href="./assets/css/detalhes/detalhes-contato.css">
+        <link rel="stylesheet" href="./assets/css/rodape.css">
+
+        <title>AluraGeek - Adicionar produto</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <picture>
+                <source srcset="./assets/img/Logo-grande.png" media="(min-width: 1440px)">
+                <img src="./assets/img/Logo.png" alt="Logo da Alura Geek" class="cabecalho__logo">
+            </picture>
+            <a class="btn btn--header btn--header-novoProduto" href="#">Menu Administrador</a>
+            <div class="cabecalho__pesquisa"></div>
+            <div class="pesquisa">
+                <input class="pesquisa__campo" type="text" placeholder="O que deseja encontrar?">
+                <span class="pesquisa__icone"></span>
+            </div>
+        </header>
+
+        <main>
+            <section class="novoProduto">
+                <h2 class="novoProduto__titulo">Adicionando novo Produto</h2>
+                <form class="formulario formulario--novoProduto">
+                    <fieldset class="fieldset fieldset--novoProduto">
+                        <label for="url" class="rotulo">URL da imagem</label>
+                        <input name="url" type="text" id="url" class="campo campo--novoProduto" required pattern="^.+\.(png|jpg|jpeg)$">
+                        <img class="icone icone--valido" src="./assets/img/validacao-sucesso.png" alt="">
+                        <img class="icone icone--invalido" src="./assets/img/validacao-erro.png" alt="">
+                        <span class="mensagem-erro" id="erro-url"></span>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset--novoProduto">
+                        <label for="categoria" class="rotulo">Categoria</label>
+                        <select name="categoria" type="text" id="categoria" class="campo campo--select" required>
+                            <option value=""></option>
+                            <option value="starWars">Star Wars</option>
+                            <option value="consoles">Consoles</option>
+                            <option value="diversos">Diversos</option>
+                        </select>
+                        <img class="icone icone--valido" src="./assets/img/validacao-sucesso.png" alt="">
+                        <img class="icone icone--invalido" src="./assets/img/validacao-erro.png" alt="">
+                        <span class="mensagem-erro" id="erro-categoria"></span>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset--novoProduto">
+                        <label for="nome" class="rotulo">Nome do produto</label>
+                        <input name="nome" type="text" id="nome" class="campo campo--novoProduto" required minlength="5">
+                        <img class="icone icone--valido" src="./assets/img/validacao-sucesso.png" alt="">
+                        <img class="icone icone--invalido" src="./assets/img/validacao-erro.png" alt="">
+                        <span class="mensagem-erro" id="erro-nome"></span>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset--novoProduto">
+                        <label for="preco" class="rotulo">Preço do produto</label>
+                        <input name="preco" type="text" id="preco" class="campo campo--novoProduto" required pattern="^\d{1,5}([,]{1}\d{1,2})?$">
+                        <img class="icone icone--valido" src="./assets/img/validacao-sucesso.png" alt="">
+                        <img class="icone icone--invalido" src="./assets/img/validacao-erro.png" alt="">
+                        <span class="mensagem-erro" id="erro-preco"></span>                
+                    </fieldset>
+                    <fieldset class="fieldset fieldset--novoProduto">
+                        <label for="descricao" class="rotulo">Descricao do produto</label>
+                        <textarea name="descricao" id="descricao" cols="30" rows="3" class="campo" required maxlength="200"></textarea>
+                        <img class="icone icone--valido" src="./assets/img/validacao-sucesso.png" alt="">
+                        <img class="icone icone--invalido" src="./assets/img/validacao-erro.png" alt="">
+                        <span class="mensagem-erro" id="erro-descricao"></span>
+                    </fieldset>
+                </form>
+                <button class="btn btn--form-novoProduto desabilitado" id="btn" disabled>Adicionar produto</button>
+            </section>
+
+            <section class="detalhes">
+                <section class="sobre">
+                    <img src="./assets/img/Logo-grande.png" alt="Logo da Alura Geek" class="sobre__logo">
+                    <ul class="lista-links">
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Quem somos nós</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Política de privacidade</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Programa fidelidade</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Nossas lojas</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Quero ser franqueado</a>
+                        </li>
+                        <li class="lista-links__item">
+                            <a href="#" class="item__link">Anuncie aqui</a>
+                        </li>
+                    </ul>
+                </section>
+    
+                <form class="contato">
+                    <legend class="contato__titulo">Fale conosco</legend>
+                    <fieldset class="fieldset">
+                        <label for="nome" class="rotulo">Nome:</label>
+                        <input type="text" id="nome" class="campo" placeholder="Digite seu nome completo...">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="mensagem" class="rotulo">Mensagem:</label>
+                        <textarea id="mensagem" cols="30" rows="3" class="campo" placeholder="Escreva sua mensagem"></textarea>
+                    </fieldset>
+                    <button class="btn btn--contato">Enviar mensagem</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p class="rodape__texto">Desenvolvido por Matheus Dutra<br>2023</p>
+        </footer>
+        <!-- <span class="lista-produtos"></span> -->
+
+        <script src="./assets/js/adicionarProduto.js" type="module"></script>
+    </body>
+</html>

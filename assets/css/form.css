@@ -1,0 +1,57 @@
+.formulario {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.fieldset {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--cinza-30);
+    border-radius: 4px;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+.campo {
+    border: none;
+    color: var(--cinza-100);
+    font-size: 1rem;
+    font-weight: 400;
+    /* height: 20px; */
+    padding: .5rem;
+}
+
+.rotulo {
+    color: var(--cinza-50);
+    font-size: .75rem;
+    font-weight: 400;
+    padding-bottom: .25rem;
+}
+
+.btn {
+    background-color: var(--azul);
+    border: none;
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+textarea {
+    border: none;
+}
+
+.campo:focus {
+    outline: none;
+}
+
+.fieldset:focus-within {
+    border: 1px solid var(--azul);
+}

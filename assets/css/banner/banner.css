@@ -1,0 +1,30 @@
+.banner {
+  position: relative;
+  color: var(--branco);
+}
+
+.banner-tamanho {
+  width: auto;
+  height: 192px;
+}
+
+.banner__img {
+  background: url(../../img/banner-home-mobile.png) no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-tamanho {
+    height: 352px;
+  }
+
+  .banner__img {
+    background-image: url(../../img/banner-home-tablet.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner__img {
+    background-image: url(../../img/banner-home-desktop.png);
+  }
+}

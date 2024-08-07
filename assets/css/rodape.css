@@ -1,0 +1,11 @@
+.rodape {
+    padding: 2rem;
+}
+
+.rodape__texto {
+    color: var(--cinza-100);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    text-align: center;
+}

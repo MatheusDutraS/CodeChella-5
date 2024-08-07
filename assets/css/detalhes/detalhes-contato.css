@@ -1,0 +1,16 @@
+.contato {
+    background-color: var(--azul-claro);
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.contato__titulo {
+    color: var(--cinza-100);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn--contato {
+    padding: .75rem 1rem;
+}

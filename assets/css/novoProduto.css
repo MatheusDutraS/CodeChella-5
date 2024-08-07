@@ -1,0 +1,101 @@
+.novoProduto {
+    background-color: var(--cinza-5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.novoProduto__titulo {
+    color: var(--cinza-100);
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+.formulario--novoProduto {
+    width: 100%;
+    max-width: 700px;
+}
+
+.campo--novoProduto {
+    height: 20px;
+}
+
+.campo--select {
+    height: 32px;
+}
+
+.campo--descricao {
+    height: 48px;
+}
+
+.fieldset--novoProduto {
+    width: 100%;
+    max-width: 700px;
+}
+
+.btn--form-novoProduto {
+    width: 100%;
+    max-width: 700px;
+    padding: .75rem 1rem;
+    margin-top: .5rem;
+}
+
+.mensagem-erro {
+    padding-top: .5rem;
+    font-size: 1.125rem;
+    color: #c80000;
+}
+
+.desabilitado {
+    background-color: var(--cinza-50);
+    border: 2px solid var(--cinza-100);
+}
+
+.campo--invalido {
+    border: 2px solid rgb(253, 18, 66);
+}
+
+.campo--valido {
+    border: 2px solid rgb(33, 150, 83);
+}
+
+.icone {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .novoProduto {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .novoProduto {
+        padding: 4rem 9.5rem;
+    }
+
+    .novoProduto__titulo {
+        font-size: 2rem;
+    }
+
+    .formulario--novoProduto {
+        align-items: center;
+    }
+
+    .fieldset--novoProduto {
+        max-width: 559px;
+    }
+
+    .btn--form-novoProduto {
+        max-width: 559px;
+    }
+}
